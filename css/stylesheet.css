@@ -245,7 +245,7 @@ p,li,ul,h1,h2,h3,h4 {
 /* thebigday.html */
 #thebigday {
 	width: 800px;
-	margin: auto;
+	margin: 0 auto;
 }
 
 #date-logo {
@@ -256,18 +256,18 @@ p,li,ul,h1,h2,h3,h4 {
     height: 92px;                      
     width: 400px;
     white-space: nowrap;  
-    margin: auto auto 25px auto;
+    margin: auto auto 40px auto;
 }
 
-#the-ceremony, #the-reception {
+#the-ceremony, #the-reception, #wedding-party {
 	color: #bab7b7;
 	font-family: 'Raleway','HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-	overflow: auto;
+	float: left;
+	margin-bottom: 15px;
 }
 
+
 #the-ceremony img {
-	display: inline-block;
-	float: left;
 	margin-right: 15px;
 }
 
@@ -290,14 +290,17 @@ p,li,ul,h1,h2,h3,h4 {
 }
 
 #the-reception img {
-	display: inline-block;
-	float: left;
 	margin-right: 15px;
 }
 
 #bigday-section {
 	margin-bottom: 50px;
 	overflow: auto;
+	width: 380px;
+}
+
+#the-ceremony {
+	margin-right: 30px;
 }
 
 #wedding-party h2 {
@@ -307,5 +310,24 @@ p,li,ul,h1,h2,h3,h4 {
     height: 52px;                      
     width: 362px;
     white-space: nowrap;  
+    margin: 0 auto;
 }
 
+#wedding-party {
+	clear: left;
+	width: 900px;
+}
+
+#people li {
+	list-style: none;	
+	float: left;
+	margin-bottom: 15px;
+}
+
+figure {
+	margin: 0 15px 0 0;
+}
+
+figure span {
+	display: block;
+}
