@@ -37,7 +37,7 @@ nav li {
 	font-weight: 200;
 }
 
-nav ul .active { 
+nav ul .active {
     background: #FFDED2;
 }
 
@@ -267,9 +267,9 @@ p,li,ul,h1,h2,h3,h4 {
 	display: block;
 	text-indent: -9999px;
 	background: url(../img/date.png);
-    height: 92px;                      
+    height: 92px;
     width: 400px;
-    white-space: nowrap;  
+    white-space: nowrap;
     margin: auto auto 40px auto;
 }
 
@@ -289,18 +289,18 @@ p,li,ul,h1,h2,h3,h4 {
 	display: block;
 	text-indent: -9999px;
 	background: url(../img/the-ceremony.png);
-    height: 52px;                      
+    height: 52px;
     width: 255px;
-    white-space: nowrap;  
+    white-space: nowrap;
 }
 
 #the-reception h2 {
 	display: block;
 	text-indent: -9999px;
 	background: url(../img/the-reception.png);
-    height: 52px;                      
+    height: 52px;
     width: 243px;
-    white-space: nowrap;  
+    white-space: nowrap;
 }
 
 #the-reception img {
@@ -321,9 +321,9 @@ p,li,ul,h1,h2,h3,h4 {
 	display: block;
 	text-indent: -9999px;
 	background: url(../img/wedding-party.png);
-    height: 52px;                      
+    height: 52px;
     width: 362px;
-    white-space: nowrap;  
+    white-space: nowrap;
     margin: 0 auto;
 }
 
@@ -333,7 +333,7 @@ p,li,ul,h1,h2,h3,h4 {
 }
 
 #people li {
-	list-style: none;	
+	list-style: none;
 	float: left;
 	margin-bottom: 15px;
 }
@@ -344,4 +344,8 @@ figure {
 
 figure span {
 	display: block;
+}
+
+figcaption .caption-details {
+	display: none;
 }

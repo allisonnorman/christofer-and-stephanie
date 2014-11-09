@@ -286,9 +286,16 @@
                 if (settings.dynamic) {
                     dataSubHtml = settings.dynamicEl[index]['sub-html'];
                 } else {
-                    dataSubHtml = $children.eq(index).attr('data-sub-html');
+                    //dataSubHtml = $children.eq(index).attr('data-sub-html');
+                    dataSubHtml = $('<figcaption/>', {
+                      class: 'lightGallery-caption',
+                      html: $children.eq(index).find('figcaption').html()
+                    });
                 }
                 if (typeof dataSubHtml !== 'undefined' && dataSubHtml !== null) {
+                  if($.type(dataSubHtml) == 'object') {
+                    $slide.eq(index).append(dataSubHtml);
+                  } else {
                     var fL = dataSubHtml.substring(0, 1);
                     if (fL == '.' || fL == '#') {
                         dataSubHtml = $(dataSubHtml).html();
@@ -297,6 +304,7 @@
                     }
                     $slide.eq(index).append(dataSubHtml);
                 }
+              }
             },
             preload: function(index) {
                 var newIndex = index;
@@ -346,7 +354,7 @@
                     if (settings.dynamic) {
                         src = settings.dynamicEl[index].src;
                     } else {
-                        src = $children.eq(index).attr('data-src');
+                        src = $children.eq(index).attr('data-src') || $children.eq(index).find('img').attr('src');
                     }
                 }
                 var time = 0;

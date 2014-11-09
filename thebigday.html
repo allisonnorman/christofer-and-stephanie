@@ -4,12 +4,12 @@
 		<title>Christofer &amp; Stephanie | Wedding | 4.18.15 | Oxford, Ohio |</title>
 		<link href='http://fonts.googleapis.com/css?family=Allura|Raleway+Dots|Raleway:400,100,200' rel='stylesheet' type='text/css'>
 		<link type="text/css" rel="stylesheet" href="css/stylesheet.css"/>
-		<link type="text/css" rel="stylesheet" href="css/lightGallery.css" />                    
+		<link type="text/css" rel="stylesheet" href="css/lightGallery.css" />
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<script src="js/lightGallery.js"></script>
 		<script type="text/javascript">
 		  $(document).ready(function() {
-		    $("#lightGallery").lightGallery(); 
+		    $(".gallery").lightGallery();
 		  });
 		</script>
 	</head>
@@ -71,12 +71,13 @@
 			<section id="wedding-party">
 				<h2>The Wedding Party</h2>
 				<div id="people">
-					<ul>
+					<ul class="gallery">
 						<li>
 							<figure>
 								<img src="img/allison.jpg" width: 200 height: 200>
 								<figcaption>
 									<span>Allison Norman</span><span>Matron of Honor</span>
+									<span class="caption-details">Also the web developer</span>
 								</figcaption>
 							</figure>
 						</li>
