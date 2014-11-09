@@ -98,7 +98,7 @@ p,li,ul,h1,h2,h3,h4 {
 	margin: 0 0 10px 0;
 }
 
-#oxford-buttons a:active {
+#oxford-buttons a:active, #oxford-buttons a.active {
 	background-color: #ffded1;
 	color: #ffffff;
 }
@@ -131,6 +131,7 @@ p,li,ul,h1,h2,h3,h4 {
 	width: 60%;
 	text-align: center;
 	margin: 0 0 0 15px;
+	display: none;
  }
 
 .text-box-hotel h2 {
@@ -160,6 +161,15 @@ p,li,ul,h1,h2,h3,h4 {
 	text-decoration: none;
 	width: 60%;
 	margin: 0 0 0 15px;
+	display: none;
+ }
+
+ #map:target, #hotels:target, #our-favorites:target, #map.target, #hotels.target, #our-favorites.target {
+ 	display: block;
+ }
+
+ #hotels:target ~ section, #our-favorites:target ~ section, #hotels.target ~ section, #our-favorites.target ~ section {
+ 	display: none;
  }
 
  .text-box-map img {
@@ -183,6 +193,10 @@ p,li,ul,h1,h2,h3,h4 {
 
 #visiting-float {
 	overflow: auto;
+}
+
+#visiting-float section {
+	min-height: 527px;
 }
 
 /* rsvp.html */
