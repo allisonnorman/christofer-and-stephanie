@@ -7,7 +7,7 @@
 		<script type="text/javascript">
 			document.addEventListener('DOMContentLoaded', function() {
 				var buttons = document.querySelectorAll('#oxford-buttons a');
-				
+
 
 				function deactivate(elements) {
 					for (var i = 0; i < elements.length; i++) {
@@ -24,6 +24,9 @@
 					target.className += ' target';
 				}
 
+				if (window.location.hash == '') {
+					buttons[0].className += ' active';
+				}
 				for(var i = 0; i < buttons.length; i++) {
 					var button = buttons[i];
 					if (button.getAttribute('href') == window.location.hash) {
@@ -91,8 +94,8 @@
 							<li>Distance from reception: <a href="https://www.google.com/maps/d/edit?mid=zPXjaxkc8Qe8.k3zm19B5Rcyc">0.6 miles</a></li>
 						</ul>
 						<p>***ADD Other suggestions from OCAC***</p>
-					</section> 
-					
+					</section>
+
 					<section class="text-box-favorite" id="our-favorites">
 						<h2>We are <span class="strong">so excited</span> to share our city with you. Check out some recommendations of our favorite spots.</h2>
 						<ul class="recommendations">
@@ -110,7 +113,7 @@
 						<img src="img/map.png">
 					</section>
 				</div>
-			</div>	
+			</div>
 		</div>
 	</body>
 </html>
