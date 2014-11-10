@@ -349,3 +349,52 @@ figure span {
 figcaption .caption-details {
 	display: none;
 }
+
+.wedding-party-gallery li {
+	float: left;
+	list-style: none;
+	margin: 0 auto 10px auto;
+}
+
+.lightGallery-caption span {
+	color: #000000;
+	font-family: 'Raleway','HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+.lightGallery-caption {
+	background: #FFDED2;
+	color: #000000;
+	padding: 15px 0;
+	margin: 12px auto;
+}
+
+.lightGallery-caption span:first-child {
+	font-weight: bold;
+}
+
+.caption-details {
+	width: 700px;
+	bottom: 0;
+	white-space: normal;
+	margin: 3px auto 0 auto;
+	text-align: left;
+	font-size: 14px;
+}
+
+.wedding-party-gallery li:nth-child(4n), .wedding-party-gallery li:nth-child(4n) figure {
+	margin-right: 0;
+}
+
+.wedding-party-gallery {
+	overflow: auto;
+}
+
+.wedding-party-gallery {
+	padding: 0;
+	width: 850px;
+	margin: 0 auto;
+}
+
+div#lightGallery-outer {
+	background: rgba(249,246,246,0.8);
+}
