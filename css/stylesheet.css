@@ -452,8 +452,15 @@ figcaption .caption-details {
 
 .wedding-party-gallery {
 	padding: 0;
+}
+
+#gallery-container {
 	width: 850px;
 	margin: 0 auto;
+}
+
+#gallery-container p {
+	float: right;
 }
 
 div#lightGallery-outer {
