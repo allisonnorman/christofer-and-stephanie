@@ -287,10 +287,12 @@
                     dataSubHtml = settings.dynamicEl[index]['sub-html'];
                 } else {
                     //dataSubHtml = $children.eq(index).attr('data-sub-html');
-                    dataSubHtml = $('<figcaption/>', {
-                      class: 'lightGallery-caption',
-                      html: $children.eq(index).find('figcaption').html()
-                    });
+                    var caption = $children.eq(index).find('figcaption').html();
+                    if (caption)
+                      dataSubHtml = $('<figcaption/>', {
+                        class: 'lightGallery-caption',
+                        html: $children.eq(index).find('figcaption').html()
+                      });
                 }
                 if (typeof dataSubHtml !== 'undefined' && dataSubHtml !== null) {
                   if($.type(dataSubHtml) == 'object') {
