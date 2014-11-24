@@ -406,6 +406,10 @@ textarea {
 	margin-right: 30px;
 }
 
+#people {
+	display: inline-block;
+}
+
 #wedding-party h2 {
 	display: block;
 	text-indent: -9999px;
@@ -443,6 +447,7 @@ figcaption .caption-details {
 	float: left;
 	list-style: none;
 	margin: 0 auto 10px auto;
+	cursor: pointer;
 }
 
 .lightGallery-caption span {
@@ -476,9 +481,6 @@ figcaption .caption-details {
 
 .wedding-party-gallery {
 	overflow: auto;
-}
-
-.wedding-party-gallery {
 	padding: 0;
 }
 
@@ -493,6 +495,10 @@ figcaption .caption-details {
 	float: right;
 	font-size: 11px;
 	color: #bab7b7;
+}
+
+.gallery {
+	cursor: pointer;
 }
 
 div#lightGallery-outer {
