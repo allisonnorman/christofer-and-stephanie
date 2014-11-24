@@ -23,6 +23,8 @@ nav {
 	border-top: 1px solid #FEC6B0;
 	border-bottom: 1px solid #FEC6B0;
 	margin: 0 0 20px 0;
+	overflow: auto;
+	padding: 2px;
 }
 
 body {
@@ -32,21 +34,29 @@ body {
 
 nav li {
 	list-style: none;
-	display: inline-block;
+	float: left;
 	font-family: 'Raleway','HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica, sans-serif;
 	font-size: 12px;
 	font-weight: 200;
+	width: 16.66666667%;
+    text-align: center;
+    white-space: nowrap;
 }
 
-nav ul .active {
+nav a.active {
     background: #FFDED2;
 }
 
 nav a {
 	text-decoration: none;
 	padding: 8px 45px;
-	display: inline-block;
+	display: block;
 	color: black;
+	margin-right: 2px;
+}
+
+nav li:nth-child(6) a {
+	margin-right: 0;
 }
 
 nav a:hover {
@@ -54,8 +64,9 @@ nav a:hover {
 }
 
 nav ul {
-	margin: 3px;
+	margin: 0;
 	padding: 0;
+	overflow: auto;
 }
 
 #logo {
@@ -453,6 +464,8 @@ figcaption .caption-details {
 .wedding-party-gallery {
 	padding: 0;
 }
+
+/*gallery.html*/
 
 #gallery-container {
 	width: 850px;
