@@ -2,13 +2,32 @@
 /* index.html */
 #container {
 	width: 960px;
-	margin: 0 auto;
+	margin: 0 auto 50px auto;
+	min-height: 600px;
 }
 
 #visit-container {
 	width: 800px;
 	margin: auto;
 }
+
+footer {
+	text-align: center;
+	color: #bab7b7;
+	font-size: 12px;
+    font-family: 'Raleway','HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    clear: left;
+    border-top: 1px solid #FEC6B0;
+    width: 800px;
+    margin: 0 auto;
+}
+
+footer img {
+	margin-top: 5px;
+	display: inline-block;
+	vertical-align: bottom;
+}
+
 
 header {
 	text-align: center;
@@ -28,7 +47,7 @@ nav {
 }
 
 body {
-	padding-bottom: 100px;
+	padding-bottom: 10px;
 	font-family: 'Raleway','HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
 
@@ -273,8 +292,6 @@ textarea {
 }
 
 /* rsvp.html */
-.rsvp {
-}
 
 /* registry.html */
 #registry-logos li {
@@ -349,7 +366,7 @@ textarea {
 	color: #bab7b7;
 	font-family: 'Raleway','HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica, sans-serif;
 	float: left;
-	margin-bottom: 15px;
+	margin-bottom: 30px;
 }
 
 
@@ -474,6 +491,8 @@ figcaption .caption-details {
 
 #gallery-container p {
 	float: right;
+	font-size: 11px;
+	color: #bab7b7;
 }
 
 div#lightGallery-outer {
@@ -481,6 +500,11 @@ div#lightGallery-outer {
 }
 
 /* rsvp page */
-.rsvp p {
+#rsvp p {
 	color: #bab7b7;
+	font-family: 'Raleway','HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+#rsvp {
+	text-align: center;
 }
