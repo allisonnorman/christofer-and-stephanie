@@ -2,13 +2,32 @@
 /* index.html */
 #container {
 	width: 960px;
-	margin: 0 auto;
+	margin: 0 auto 50px auto;
+	min-height: 600px;
 }
 
 #visit-container {
 	width: 800px;
 	margin: auto;
 }
+
+footer {
+	text-align: center;
+	color: #bab7b7;
+	font-size: 12px;
+    font-family: 'Raleway','HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    clear: left;
+    border-top: 1px solid #FEC6B0;
+    width: 800px;
+    margin: 0 auto;
+}
+
+footer img {
+	margin-top: 5px;
+	display: inline-block;
+	vertical-align: bottom;
+}
+
 
 header {
 	text-align: center;
@@ -23,29 +42,40 @@ nav {
 	border-top: 1px solid #FEC6B0;
 	border-bottom: 1px solid #FEC6B0;
 	margin: 0 0 20px 0;
+	overflow: auto;
+	padding: 2px;
 }
 
 body {
-	padding-bottom: 100px;
+	padding-bottom: 10px;
+	font-family: 'Raleway','HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
 
 nav li {
 	list-style: none;
-	display: inline-block;
+	float: left;
 	font-family: 'Raleway','HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica, sans-serif;
 	font-size: 12px;
 	font-weight: 200;
+	width: 16.66666667%;
+    text-align: center;
+    white-space: nowrap;
 }
 
-nav ul .active { 
+nav a.active {
     background: #FFDED2;
 }
 
 nav a {
 	text-decoration: none;
 	padding: 8px 45px;
-	display: inline-block;
+	display: block;
 	color: black;
+	margin-right: 2px;
+}
+
+nav li:nth-child(6) a {
+	margin-right: 0;
 }
 
 nav a:hover {
@@ -53,8 +83,9 @@ nav a:hover {
 }
 
 nav ul {
-	margin: 3px;
+	margin: 0;
 	padding: 0;
+	overflow: auto;
 }
 
 #logo {
@@ -64,6 +95,67 @@ nav ul {
 p,li,ul,h1,h2,h3,h4 {
 	margin-top: 0;
 }
+
+.contentContainer-inner {
+	width: 800px;
+	margin: 0 auto;
+}
+
+form {
+	color: #bab7b7;
+}
+
+form fieldset {
+	border: none;
+	overflow: auto;
+	margin-bottom: 10px;
+}
+
+fieldset > label {
+	width: 28%;
+	float: left;
+	text-align: right;
+	margin-right: 20px;
+	font-weight: bold;
+	font-size: 14px;
+	margin-top: 3px;
+}
+
+fieldset input[type="text"], fieldset textarea, fieldset .radio-group {
+	float: left;
+	width: 50%;
+	border-radius: 4px;
+}
+
+input[type="text"], textarea {
+	border: 1px solid #ccc;
+	padding: 5px;
+	color: #bab7b7;
+	font-size: 14px;
+}
+
+.radio-group {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+textarea {
+	width: 100%;
+	height: 100px;
+}
+
+.submit-group {
+	margin-left: 28%;
+	margin-top: 20px;
+	padding-left: 28px;
+}
+
+.submit-group button {
+	padding: 10px;
+	border: none;
+}
+
 
 #corner-ribbon {
 	width: 266px;
@@ -98,7 +190,7 @@ p,li,ul,h1,h2,h3,h4 {
 	margin: 0 0 10px 0;
 }
 
-#oxford-buttons a:active {
+#oxford-buttons a:active, #oxford-buttons a.active {
 	background-color: #ffded1;
 	color: #ffffff;
 }
@@ -131,6 +223,7 @@ p,li,ul,h1,h2,h3,h4 {
 	width: 60%;
 	text-align: center;
 	margin: 0 0 0 15px;
+	display: none;
  }
 
 .text-box-hotel h2 {
@@ -160,6 +253,15 @@ p,li,ul,h1,h2,h3,h4 {
 	text-decoration: none;
 	width: 60%;
 	margin: 0 0 0 15px;
+	display: none;
+ }
+
+ #map:target, #hotels:target, #our-favorites:target, #map.target, #hotels.target, #our-favorites.target {
+ 	display: block;
+ }
+
+ #hotels:target ~ section, #our-favorites:target ~ section, #hotels.target ~ section, #our-favorites.target ~ section {
+ 	display: none;
  }
 
  .text-box-map img {
@@ -185,10 +287,11 @@ p,li,ul,h1,h2,h3,h4 {
 	overflow: auto;
 }
 
-/* rsvp.html */
-.rsvp {
-	text-align: center;
+#visiting-float section {
+	min-height: 527px;
 }
+
+/* rsvp.html */
 
 /* registry.html */
 #registry-logos li {
@@ -221,6 +324,7 @@ p,li,ul,h1,h2,h3,h4 {
 #our-story p,h3 {
 	color: #bab7b7;
 	font-family: 'Raleway','HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+	line-height: 1.4;
 }
 
 #our-story {
@@ -246,6 +350,7 @@ p,li,ul,h1,h2,h3,h4 {
 #thebigday {
 	width: 800px;
 	margin: 0 auto;
+	overflow: auto;
 }
 
 #date-logo {
@@ -253,17 +358,17 @@ p,li,ul,h1,h2,h3,h4 {
 	display: block;
 	text-indent: -9999px;
 	background: url(../img/date.png);
-    height: 92px;                      
+    height: 92px;
     width: 400px;
-    white-space: nowrap;  
+    white-space: nowrap;
     margin: auto auto 40px auto;
 }
 
-#the-ceremony, #the-reception, #wedding-party {
+#the-ceremony, #the-reception {
 	color: #bab7b7;
 	font-family: 'Raleway','HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica, sans-serif;
 	float: left;
-	margin-bottom: 15px;
+	margin-bottom: 30px;
 }
 
 
@@ -275,18 +380,18 @@ p,li,ul,h1,h2,h3,h4 {
 	display: block;
 	text-indent: -9999px;
 	background: url(../img/the-ceremony.png);
-    height: 52px;                      
+    height: 52px;
     width: 255px;
-    white-space: nowrap;  
+    white-space: nowrap;
 }
 
 #the-reception h2 {
 	display: block;
 	text-indent: -9999px;
 	background: url(../img/the-reception.png);
-    height: 52px;                      
+    height: 52px;
     width: 243px;
-    white-space: nowrap;  
+    white-space: nowrap;
 }
 
 #the-reception img {
@@ -307,19 +412,20 @@ p,li,ul,h1,h2,h3,h4 {
 	display: block;
 	text-indent: -9999px;
 	background: url(../img/wedding-party.png);
-    height: 52px;                      
+    height: 52px;
     width: 362px;
-    white-space: nowrap;  
-    margin: 0 auto;
+    white-space: nowrap;
+    margin: 0 auto 20px auto;
 }
 
 #wedding-party {
 	clear: left;
-	width: 900px;
+	width: 845px;
+	margin: auto;
 }
 
 #people li {
-	list-style: none;	
+	list-style: none;
 	float: left;
 	margin-bottom: 15px;
 }
@@ -330,4 +436,87 @@ figure {
 
 figure span {
 	display: block;
+}
+
+figcaption .caption-details {
+	display: none;
+}
+
+.wedding-party-gallery li {
+	float: left;
+	list-style: none;
+	margin: 0 auto 10px auto;
+	cursor: pointer;
+}
+
+#containerbigday {
+	margin: 0 auto;
+}
+
+.wedding-party-gallery {
+	padding: 0;
+	overflow: auto;
+}
+
+.lightGallery-caption span {
+	color: #000000;
+	font-family: 'Raleway','HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+.lightGallery-caption {
+	background: #FFDED2;
+	color: #000000;
+	padding: 15px 0;
+	margin: 12px auto;
+}
+
+.lightGallery-caption span:first-child {
+	font-weight: bold;
+}
+
+.caption-details {
+	width: 700px;
+	bottom: 0;
+	white-space: normal;
+	margin: 3px auto 0 auto;
+	text-align: left;
+	font-size: 14px;
+}
+
+.wedding-party-gallery li:nth-child(4n), .wedding-party-gallery li:nth-child(4n) figure {
+	margin-right: 0;
+}
+
+/*gallery.html*/
+
+#gallery-container {
+	width: 850px;
+	margin: 0 auto;
+}
+
+#gallery-container p {
+	float: right;
+	font-size: 11px;
+	color: #bab7b7;
+}
+
+.gallery {
+	cursor: pointer;
+	display: inline-block;
+	padding-left: 0;
+
+}
+
+div#lightGallery-outer {
+	background: rgba(249,246,246,0.8);
+}
+
+/* rsvp page */
+#rsvp p {
+	color: #bab7b7;
+	font-family: 'Raleway','HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+#rsvp {
+	text-align: center;
 }
